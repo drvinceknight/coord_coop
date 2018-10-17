@@ -2,7 +2,8 @@ import random
 from coord_coop.actions import C, D
 from typing import Sequence
 
-def decide_action(p: float):
+
+def decide_action(p: float) -> str:
     """
     Return an action C with probability p otherwise returns D.
     """
@@ -12,12 +13,14 @@ def decide_action(p: float):
         return C
     return C if random.random() < p else D
 
-class BaseStrategy():
+
+class BaseStrategy:
     """
     A base strategy class. Defined by a sequence of probabilities which maps
     number of cooperators to a probability of cooperating.
     """
-    def __init__(self, sequence: Sequence[float], p: float):
+
+    def __init__(self, sequence: Sequence[float], p: float) -> None:
         """
         Initialises an instance of the class:
 
@@ -27,7 +30,7 @@ class BaseStrategy():
         self.sequence = sequence
         self.action = decide_action(p=p)
 
-    def update_action(self, players: Sequence):
+    def update_action(self, players: Sequence) -> None:
         """
         Given a list of players: updates the action of a given player according
         to number of players currently cooperating.

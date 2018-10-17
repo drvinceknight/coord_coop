@@ -4,13 +4,13 @@ from setuptools import setup, find_packages
 # exec(open('src/coord_coop/version.py', 'r').read())
 
 setup(
-    name='cood_coop',
-    #version=__version__,
-    #install_requires=requirements,
-    author='Vince Knight',
-    author_email=('knightva@cardiff.ac.uk'),
-    packages=find_packages('src'),
+    name="cood_coop",
+    # version=__version__,
+    # install_requires=requirements,
+    author="Vince Knight",
+    author_email=("knightva@cardiff.ac.uk"),
+    packages=find_packages("src"),
     package_dir={"": "src"},
-    url='',
-    license='The MIT License (MIT)',
+    url="",
+    license="The MIT License (MIT)",
 )
