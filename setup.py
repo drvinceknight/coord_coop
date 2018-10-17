@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 # Read in the version number
 # exec(open('src/coord_coop/version.py', 'r').read())
