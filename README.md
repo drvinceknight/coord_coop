@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/drvinceknight/coord_coop.svg?branch=master)](https://travis-ci.org/drvinceknight/coord_coop)
+[![Coverage Status](https://coveralls.io/repos/github/drvinceknight/coord_coop/badge.svg?branch=master)](https://coveralls.io/github/drvinceknight/coord_coop?branch=master)
+
 # coord_coop
 
 A library to replicate the coordinated cooperation game presented in https://www.frontiersin.org/articles/10.3389/fevo.2018.00062/full
