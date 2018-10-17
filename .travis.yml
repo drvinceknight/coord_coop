@@ -27,6 +27,7 @@ install:
 
 script:
   - pytest
+  - python -m doctest README.md
   - mypy src/coord_coop
   - black -l 80 . --check
   - isort -rc . --check-only
