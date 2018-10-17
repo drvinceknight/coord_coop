@@ -1,6 +1,7 @@
+import random
+
 import coord_coop as cc
 from coord_coop.actions import C, D
-import random
 
 
 def test_random_init():

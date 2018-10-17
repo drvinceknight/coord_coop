@@ -1,6 +1,7 @@
 import random
-from coord_coop.actions import C, D
 from typing import Sequence
+
+from coord_coop.actions import C, D
 
 
 def decide_action(p: float) -> str:

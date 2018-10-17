@@ -1,6 +1,7 @@
-from .strategies import BaseStrategy
 from typing import Sequence
+
 from .actions import C, D
+from .strategies import BaseStrategy
 
 
 def utility(

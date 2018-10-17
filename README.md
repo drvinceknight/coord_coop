@@ -9,6 +9,7 @@ Install development requirements:
 
     $ pip install pytest
     $ pip install mypy
+    $ pip install isort
 
 Install in developer mode:
 
@@ -21,3 +22,11 @@ Run the test suit:
 Run the type hint checker:
 
     $ mypy src/coord_coop
+
+Run the black code formatter:
+
+    $ black -l 80
+
+Run the isort import sorter:
+
+    $ isort -rc .

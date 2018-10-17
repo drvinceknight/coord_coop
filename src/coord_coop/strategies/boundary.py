@@ -1,9 +1,11 @@
 import random
+
 from coord_coop.actions import C, D
+
 from .base import BaseStrategy
 
 
-class SingleBoundaryStrategy:
+class SingleBoundaryStrategy(BaseStrategy):
     """
     A deterministic strategy that defects until a given number of players
     cooperate.

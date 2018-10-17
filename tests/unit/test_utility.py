@@ -1,5 +1,5 @@
-from coord_coop.utility import utility
 import coord_coop as cc
+from coord_coop.utility import utility
 
 
 def test_utility():
