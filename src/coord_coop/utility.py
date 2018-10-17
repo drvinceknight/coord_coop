@@ -1,10 +1,12 @@
+from typing import Sequence
 
 from .actions import C, D
 from .strategies import BaseStrategy
-from typing import Sequence
 
 
-def utility( players: Sequence[BaseStrategy], r: float, c: float) -> Sequence[float]:
+def utility(
+    players: Sequence[BaseStrategy], r: float, c: float
+) -> Sequence[float]:
     """
     Returns a tuple of utilities for all players as defined by:
 

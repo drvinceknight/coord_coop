@@ -7,12 +7,12 @@ from coord_coop.actions import C, D
 def test_random_init():
     random.seed(0)
     sequence = (1, 1, 0)
-    player = cc.strategies.BaseStrategy(sequence=sequence, p=.5)
+    player = cc.strategies.BaseStrategy(sequence=sequence, p=0.5)
     assert player.sequence == sequence
     assert player.action == D
 
     random.seed(1)
-    player = cc.strategies.BaseStrategy(sequence=sequence, p=.5)
+    player = cc.strategies.BaseStrategy(sequence=sequence, p=0.5)
     assert player.sequence == sequence
     assert player.action == C
 
