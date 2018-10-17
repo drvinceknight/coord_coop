@@ -31,6 +31,7 @@ types players:
 Install development requirements:
 
     $ pip install pytest
+    $ pip install pytest-cov
     $ pip install mypy
     $ pip install isort
 
@@ -38,7 +39,7 @@ Install in developer mode:
 
     $ python setup.py develop
 
-Run the test suit (doctesting all markdown and rst files):
+Run the test suit:
 
     $ pytest
 
