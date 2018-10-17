@@ -2,6 +2,29 @@
 
 A library to replicate the coordinated cooperation game presented in https://www.frontiersin.org/articles/10.3389/fevo.2018.00062/full
 
+## Usage
+
+Here is an example showing a single version of the negotiation for 3 boundary
+types players:
+
+    >>> import random
+    >>> import coord_coop as cc
+    >>> random.seed(0)
+    >>> players = (
+    ...     cc.strategies.SingleBoundaryStrategy(
+    ...         boundary=1, number_of_players=3, p=0
+    ...     ),
+    ...     cc.strategies.SingleBoundaryStrategy(
+    ...         boundary=1, number_of_players=3, p=1
+    ...     ),
+    ...     cc.strategies.SingleBoundaryStrategy(
+    ...         boundary=2, number_of_players=3, p=1
+    ...     ),
+    ... )
+    >>> cc.negotiate(players)
+    [('D', 'C', 'C'), ('C', 'C', 'C')]
+    >>> cc.utility(players, r=3, c=1)
+    (2.0, 2.0, 2.0)
 
 ## Development
 
@@ -15,7 +38,7 @@ Install in developer mode:
 
     $ python setup.py develop
 
-Run the test suit:
+Run the test suit (doctesting all markdown and rst files):
 
     $ pytest
 
