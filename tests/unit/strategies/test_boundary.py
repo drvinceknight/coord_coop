@@ -7,12 +7,12 @@ def test_base_player_random_init():
     n = 3
     player = cc.strategies.SingleBoundaryStrategy(boundary=2,
             number_of_players=3, p=.5)
-    assert player.sequence == (D, D, C)
+    assert player.sequence == (0, 0, 1)
 
     player = cc.strategies.SingleBoundaryStrategy(boundary=2,
             number_of_players=4, p=.5)
-    assert player.sequence == (D, D, C, C)
+    assert player.sequence == (0, 0, 1, 1)
 
     player = cc.strategies.SingleBoundaryStrategy(boundary=0,
             number_of_players=4, p=.5)
-    assert player.sequence == (C, C, C, C)
+    assert player.sequence == (1, 1, 1, 1)
