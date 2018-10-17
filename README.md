@@ -43,6 +43,10 @@ Run the test suit:
 
     $ pytest
 
+Run the doctests:
+
+    $ python -m doctest README.md
+
 Run the type hint checker:
 
     $ mypy src/coord_coop

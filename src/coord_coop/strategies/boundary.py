@@ -21,6 +21,6 @@ class SingleBoundaryStrategy(BaseStrategy):
         - p: probability of cooperating as an initial action.
         """
         self.sequence = tuple(
-            [int(i >= boundary) for i in range(number_of_players)]
+            [int(i >= boundary) for i in range(number_of_players + 1)]
         )
         self.action = C if random.random() < p else D
